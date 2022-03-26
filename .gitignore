@@ -3,6 +3,5 @@
 *.bat
 /venv/
 /build/
-/dist/
 /__pycache__/
 *.spec
