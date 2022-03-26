@@ -5,6 +5,16 @@ from configparser import ConfigParser
 import time
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
+current_version = '1.0'
+
+# GitHub version checking
+latest_version = requests.get("https://api.github.com/repos/realdeadbeef/pve-spice-manager/releases/latest")
+latest_version = str(latest_version.json()["tag_name"])
+
+if latest_version != current_version:
+    print(f'Your version of pve-spice-manager has been outdated by {latest_version}.\nPlease update for the latest '
+          f'bug fixes and improvements from: https://github.com/realdeadbeef/pve-spice-manager/releases\n')
+
 dir_path = f"{os.environ['APPDATA']}\\pve-spice-manager\\"
 pools = []
 pool_member_names = []
