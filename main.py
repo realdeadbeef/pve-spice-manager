@@ -15,7 +15,7 @@ if latest_version != current_version:
     print(f'Your version of pve-spice-manager has been outdated by {latest_version}.\nPlease update for the latest '
           f'bug fixes and improvements from: https://github.com/realdeadbeef/pve-spice-manager/releases\n')
 
-dir_path = f"{os.environ['APPDATA']}\\pve-spice-manager\\"
+dir_path = f"{os.environ['APPDATA']}\\pve-spice-manager"
 pools = []
 pool_member_names = []
 pool_member_id = []
