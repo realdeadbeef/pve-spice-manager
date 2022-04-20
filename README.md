@@ -1,4 +1,4 @@
 # pve-spice-manager
- A python script and exe to quickly open spice terminals from proxmox.
+An executable and python script to quickly open SPICE terminals.
  
  Downloads: [https://github.com/realdeadbeef/pve-spice-manager/releases](https://github.com/realdeadbeef/pve-spice-manager/releases)
