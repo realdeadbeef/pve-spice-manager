@@ -6,7 +6,7 @@ from time import sleep
 
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
-current_version = '1.0'
+current_version = '1.0.1'
 
 # GitHub version checking
 latest_version = requests.get("https://api.github.com/repos/realdeadbeef/pve-spice-manager/releases/latest")
